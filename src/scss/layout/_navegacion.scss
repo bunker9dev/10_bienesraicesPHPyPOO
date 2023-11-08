@@ -1,0 +1,70 @@
+.barra {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+
+    @include tablet {
+        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between; // los envia a los extremos del contenedor
+
+    }
+}
+
+.navegacion {
+    visibility: hidden; //ocultar elemento
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+   
+
+    @include tablet {
+        visibility: visible;
+        opacity: 1;
+        transition:none;
+        display: flex;
+        align-items: center; // centrado vertical
+    }
+
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+
+        @include tablet {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+
+            &:last-of-type {
+                // el ultimo elemento diferente 
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/** Menu de hamburgesa **/
+.mobileMenu {
+
+    @include tablet {
+        display: none;
+    }
+
+    img {
+        width: 5rem;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.mostrar {
+    visibility: visible; //mostrar elemento
+    opacity: 1;
+    
+}
