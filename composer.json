@@ -1,0 +1,18 @@
+{
+    "name": "anton/10_bienesraices-ph-pypoo",
+    "description": "Creando un proyecto con POO",
+    "type": "projet",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "bunker9dev",
+            "email": "bunker9dev@gmail.com"
+        }
+    ],
+    "require": {}
+   
+}
