@@ -6,8 +6,6 @@
    }
 
    $auth = $_SESSION ['login'] ?? false;
-
-
 ?> 
 
 <!DOCTYPE html>
@@ -23,7 +21,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header <?php echo $inicio  ? 'inicio' : ''; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/">
