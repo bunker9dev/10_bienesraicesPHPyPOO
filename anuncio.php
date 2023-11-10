@@ -8,7 +8,7 @@ if (!$id) {
 
 // importar la coneccion DB
 
-require  'includes/config/database.php';
+
 $db = conectarDB();
 
 
@@ -27,7 +27,7 @@ $propiedad = mysqli_fetch_assoc($resultado);
 
 
 
-require 'includes/funciones.php';
+
 
 incluirTemplate('header');
 ?>
