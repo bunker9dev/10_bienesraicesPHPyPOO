@@ -6,7 +6,3 @@ require 'config/database.php' ;
 require __DIR__ . '/../vendor/autoload.php';
 
 use App\Propiedad;
-
-$propiedad = new propiedad;
-
-var_dump($propiedad);

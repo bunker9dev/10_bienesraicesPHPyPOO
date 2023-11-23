@@ -1,13 +1,13 @@
 <?php
-require '../../includes/funciones.php';
-$auth = estaAutenticado();
+require '../../includes/app.php';
 
-if (!$auth) {
-    header('Location: /');
-}
+use App\Propiedad;
 
-// Importar Base de datos
-require '../../includes/config/database.php';
+$propiedad = new Propiedad;
+
+//debuguear($propiedad); // pruebas ojo  *************************************************
+
+estaAutenticado();
 
 $db = conectarDB();
 
