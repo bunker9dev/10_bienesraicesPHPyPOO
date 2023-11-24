@@ -3,9 +3,9 @@ require '../../includes/app.php';
 
 use App\Propiedad;
 
-$propiedad = new Propiedad;
+// $propiedad = new Propiedad;
 
-//debuguear($propiedad); // pruebas ojo  *************************************************
+// debuguear($propiedad); // pruebas ojo  *************************************************
 
 estaAutenticado();
 
@@ -32,6 +32,12 @@ $vendedor_id = '';
 
 //Ejecuta el codigo despues que el usuario envia el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+    $propiedad = new Propiedad($_POST);
+    $propiedad -> guardar();
+    
+   
+
     // echo "<pre>";
     // var_dump($_POST);
     // echo "</pre>";

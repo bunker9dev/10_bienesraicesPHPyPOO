@@ -29,18 +29,9 @@ class Propiedad {
         
     }
 
-    
 
-    
-
-    
-
-    
-
-
-
-
-
-
+    public function guardar() {
+        echo "Guardando en la Bsse de datos";
+    }
     
 }
